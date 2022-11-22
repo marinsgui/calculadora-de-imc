@@ -11,10 +11,12 @@ form.addEventListener('submit', (e) => {
 
     if (!peso) {
         setResultado('Peso inválido', false);
+        return;
     }
 
     if (!altura) {
         setResultado('Altura inválida', false);
+        return;
     }
 
     const imc = getImc(peso, altura);
@@ -54,7 +56,7 @@ function setResultado(msg, isValid) {
     if (isValid) {
         p.classList.add('paragrafo-resultado');
     } else {
-        p.classList.add('bad');
+        p.classList.add('erro');
     }
 
     p.innerHTML = msg;

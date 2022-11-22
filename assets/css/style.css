@@ -73,12 +73,15 @@ form input:focus {
 }
 
 #resultado p {
-    background-color: var(--res-color);
     display: block;
     color: white;
     padding: 10px;
 }
 
-#resultado .erro {
+.paragrafo-resultado {
+    background-color: var(--res-color);
+}
+
+.erro {
     background-color: red;
 }
